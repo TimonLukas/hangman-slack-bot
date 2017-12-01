@@ -1,0 +1,25 @@
+{
+  "name": "hangman-slack-bot",
+  "version": "1.0.0",
+  "description": "A bot that allows you to play hangman in a Slack channel. I know, pretty cool.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimonLukas/hangman-slack-bot.git"
+  },
+  "author": "Timon Lukas <timon.lukas3@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimonLukas/hangman-slack-bot/issues"
+  },
+  "homepage": "https://github.com/TimonLukas/hangman-slack-bot#readme",
+  "dependencies": {
+    "@slack/client": "^3.14.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "hashmap": "^2.3.0"
+  }
+}
