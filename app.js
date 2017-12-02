@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const games = new HashMap();
 
-app.post('/hangman', (request, response) => {
+app.post('/', (request, response) => {
     const channelId = request.body.channel_id;
     const username = request.body.user_name;
 
