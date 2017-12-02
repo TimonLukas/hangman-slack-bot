@@ -43,6 +43,10 @@ app.post('/hangman', (request, response) => {
 
                 const word = options.slice(1).join(' ').replace(/[^0-9a-z ]/gi, '');
 
+                if(word.length === 0) {
+                    return response.end(`The word contains no valid characters!`);
+                }
+
                 games.set(channelId, {
                     word,
                     'guessed': [],
